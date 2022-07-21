@@ -7,7 +7,7 @@ const cloudinary = require("../../utils/cloudinary");
 router.get("/", (req, res) => {
   Post.findAll({
     order: [["created_at", "DESC"]],
-    attributes: ["id", "post_text", "title", "image", "created_at"],
+    attributes: ["id", "post_text", "title", "created_at"],
     include: [
       {
         model: User,
