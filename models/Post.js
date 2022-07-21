@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
+
 class Post extends Model {}
 
 Post.init(
@@ -29,17 +30,17 @@ Post.init(
 				key: "id",
 			},
 		},
-		// image: {
-		// 	allowNull: true,
-		// 	public_id: {
-		// 		type: DataTypes.STRING,
-		// 		required: true,
-		// 	},
-		// 	url: {
-		// 		type: DataTypes.STRING,
-		// 		required: true,
-		// 	},
-		// },
+		image: {
+			allowNull: true,
+			public_id: {
+				type: DataTypes.STRING,
+				required: true,
+			},
+			url: {
+				type: DataTypes.STRING,
+				required: true,
+			},
+		},
 	},
 	{
 		sequelize,
