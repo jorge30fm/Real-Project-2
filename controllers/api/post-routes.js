@@ -23,7 +23,6 @@ router.get("/", (req, res) => {
 });
 
 
-
 //Create a new Post
 router.post("/", withAuth, (req, res) => {
 
@@ -35,10 +34,7 @@ router.post("/", withAuth, (req, res) => {
       title: req.body.title,
       post_text: req.body.post_text,
       user_id: req.session.user_id,
-      image: {
-        public_id: result.public_id,
-        url: result.secure_url
-      }
+      image: result.secure_url
     })
       .then((dbPostData) => res.json(dbPostData))
       .catch((err) => {
