@@ -10,6 +10,7 @@ const postdata = [
 		title: "Post 2",
 		post_text: "Sample Post 2",
 		user_id: 1,
+		image: "https://www.medicalnewstoday.com/articles/322868",
 	},
 	{
 		title: "Post 3",

@@ -31,14 +31,7 @@ Post.init(
     },
     image: {
       allowNull: true,
-      public_id: {
-        type: DataTypes.STRING,
-        required: true,
-      },
-      url: {
-        type: DataTypes.STRING,
-        required: true,
-      },
+      type: DataTypes.STRING,
     },
   },
   {
