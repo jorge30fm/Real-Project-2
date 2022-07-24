@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelise = require('../config/connection');
 const{ Post, User} = require('../models');
 
+//Get all posts
 router.get('/', (req, res) => {
         console.log('>>>>>>>>>>>>>>>>>>>>');
         Post.findAll({
@@ -29,6 +30,7 @@ router.get('/', (req, res) => {
         });
 });
 
+//Get single post
 router.get('/post/:id', (req, res) => {
         Post.findOne({
                 where: {
@@ -63,6 +65,7 @@ router.get('/post/:id', (req, res) => {
         });
 });
 
+//redirect to homepage after login
 router.get('/login', (req, res) => {
         if (req.session.loggedIn) {
                 res.redirect('/');
@@ -70,5 +73,14 @@ router.get('/login', (req, res) => {
         }
         res.render('login');
 })
+
+// if not logged in, direct to signup page
+router.get('/signup', (req, res) => {
+        if (req.session.loggedIn) {
+          res.redirect('/');
+          return;
+        }
+        res.render('signup');
+      });
 
 module.exports = router;
