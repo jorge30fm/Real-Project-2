@@ -63,12 +63,22 @@ router.get('/post/:id', (req, res) => {
         });
 });
 
-router.get('/login', (req, res) => {
+//redirect to homepage after login
+router.get("/login", (req, res) => {
         if (req.session.loggedIn) {
-                res.redirect('/');
-                return;
+          res.redirect("/");
+          return;
         }
-        res.render('login');
-})
-
-module.exports = router;
+        res.render("login");
+      });
+      
+      // if not logged in, direct to signup page
+      router.get("/signup", (req, res) => {
+        if (req.session.loggedIn) {
+          res.redirect("/");
+          return;
+        }
+        res.render("signup");
+      });
+      
+      module.exports = router;
