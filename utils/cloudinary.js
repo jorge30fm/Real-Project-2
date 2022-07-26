@@ -1,7 +1,5 @@
-
-const Formidable = require('formidable');
-const cloudinary = require('cloudinary').v2;
-require('dotenv').config();
+const cloudinary = require("cloudinary");
+require("dotenv").config();
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
