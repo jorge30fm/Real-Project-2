@@ -29,11 +29,7 @@ Post.init(
         key: "id",
       },
     },
-    image_id: {
-      allowNull: true,
-      type: DataTypes.STRING,
-    },
-    image_url: {
+    image: {
       allowNull: true,
       type: DataTypes.STRING,
     },

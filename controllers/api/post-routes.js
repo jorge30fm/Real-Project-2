@@ -9,7 +9,7 @@ const withAuth = require("../../utils/auth");
 router.get("/", (req, res) => {
   Post.findAll({
     order: [["created_at", "DESC"]],
-    attributes: ["id", "post_text", "title", "image_url", "created_at"],
+    attributes: ["id", "post_text", "title", "image", "created_at"],
     include: [
       {
         model: User,
@@ -30,7 +30,7 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "post_text", "title", "image_url", "created_at"],
+    attributes: ["id", "post_text", "title", "image", "created_at"],
     include: [
       {
         model: User,
@@ -59,8 +59,7 @@ router.post("/", (req, res) => {
     title: req.body.title,
     post_text: req.body.post_text,
     user_id: req.session.user_id,
-    // image_url: req.body.secure_url,
-    // image_id: req.body.public_id,
+    image: req.body.image
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
@@ -77,8 +76,7 @@ router.put("/:id", withAuth, (req, res) => {
     {
       title: req.body.title,
       post_text: req.body.post_text,
-      // image_url: req.body.secure_url,
-      // image_id: req.body.public_id,
+      image: req.body.image
     },
     {
       where: {
