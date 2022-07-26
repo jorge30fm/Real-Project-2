@@ -1,0 +1,16 @@
+  <ul class="post-list">
+  {{#each posts as |post|}}
+    <li class="">
+      <h2 class="">
+        <a href="/post/{{post.id}}" class="post-link">{{title}}</a>
+      </h2>
+      <h4 class="">
+        Created by
+        {{user.username}}
+        on
+        {{format_date created_at}}
+      </h4>
+      <br />
+    </li>
+  {{/each}}
+</ul>
