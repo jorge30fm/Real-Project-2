@@ -111,12 +111,10 @@ router.delete("/:id", withAuth, (req, res) => {
       }
       res.json(dbPostData);
     })
-      .then((dbPostData) => res.json(dbPostData))
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
-
-  module.exports = router;
+module.exports = router;
