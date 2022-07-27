@@ -6,7 +6,7 @@ const { Post, User } = require("../models");
 router.get("/", (req, res) => {
   console.log(">>>>>>>>>>>>>>>>>>>>");
   Post.findAll({
-    attributes: ["id", "title", "post_text", "image_url", "created_at"],
+    attributes: ["id", "title", "post_text", "image", "created_at"],
     include: [{ model: User, attributes: ["username"] }],
   })
     .then((dbPostData) => {
@@ -28,7 +28,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "title", "post_text", "image_url", "created_at"],
+    attributes: ["id", "title", "post_text", "image", "created_at"],
     include: [{ model: User, attributes: ["username"] }],
   })
     .then((dbPostData) => {
