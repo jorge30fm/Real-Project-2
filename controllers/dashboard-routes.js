@@ -8,7 +8,7 @@ router.get("/", withAuth, (req, res) => {
     where: {
       user_id: req.session.user_id,
     },
-    attributes: ["id", "title", "post_text", "image_url", "created_at"],
+    attributes: ["id", "title", "post_text", "image", "created_at"],
     include: [{ model: User, attributes: ["username"] }],
   })
     .then((dbPostData) => {
@@ -23,7 +23,7 @@ router.get("/", withAuth, (req, res) => {
 
 router.get("/edit/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
-    attributes: ["id", "title", "post_text", "image_url", "created_at"],
+    attributes: ["id", "title", "post_text", "image", "created_at"],
     include: [
       {
         model: User,
