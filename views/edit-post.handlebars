@@ -1,9 +1,8 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
   <h2>
     Edit Post
-  </h2>
-  <form class="edit-post-form">
+  </h2><br>
+  <form class="edit-post-form card">
     <br />
     <div>
       <h3>Post Title</h3>
@@ -13,6 +12,7 @@
         type="text"
         value="{{post.title}}"
       />
+      <br>
       <h3>Post Body</h3>
       <input
         class="form-input"
@@ -21,11 +21,11 @@
         value="{{post.post_text}}"
       />
     </div>
-    <div>
+    <div><br>
       Created on
       {{format_date post.created_at}}
-    </div>
-    <button class="btn" type="submit">Update post</button>
+    </div><br>
+    <button class="btn" type="submit">Update post</button><br>
     <button type="button" class="delete-btn btn">Delete post</button>
   </form>
 </article>

@@ -2,8 +2,7 @@ const router = require("express").Router();
 const cloudinary = require("cloudinary").v2;
 const { Post, User } = require("../../models");
 const withAuth = require("../../utils/auth");
-
-// const multer = require("../../utils/multer");
+require("dotenv").config();
 
 const cloudinaryConfig = cloudinary.config({
 	cloud_name: process.env.CLOUD_NAME,
