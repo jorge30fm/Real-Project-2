@@ -1,6 +1,7 @@
 
-const api_key = '523429575836714';
-const cloud_name = 'degnyzbus' ;
+
+const api_key = "523429575836714";
+const cloud_name = "degnyzbus";
 
 
 const newFormHandler = async function (event) {
