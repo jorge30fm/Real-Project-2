@@ -6,9 +6,9 @@ const withAuth = require("../../utils/auth");
 // const multer = require("../../utils/multer");
 
 const cloudinaryConfig = cloudinary.config({
-	cloud_name: process.env.CLOUD_NAME,
-	api_key: process.env.API_KEY,
-	api_secret: process.env.API_SECRET,
+	cloud_name: 'degnyzbus',
+	api_key: '523429575836714',
+	api_secret: 'zTKZf16B_4OxxKbmS6Km-9uGdzk',
 	secure: true,
 });
 
