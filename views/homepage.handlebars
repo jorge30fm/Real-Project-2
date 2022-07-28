@@ -1,10 +1,13 @@
-  <ul class="post-list">
+  <ul class="post-list col-auto">
   {{#each posts as |post|}}
-    <li class="">
-      <h2 class="">
+    <li class="list-item card col-auto">
+      <h2 class="card-header">
         <a href="/post/{{post.id}}" class="post-link">{{title}}</a>
-      </h2>
-      <h4 class="">
+      </h2><br>
+      <div class="image">
+        <img class="image" src="https://res.cloudinary.com/degnyzbus/image/upload/w_600,h_300,c_fill,q_100/{{image}}.jpg" alt="" />
+      </div>
+      <h4 class="card-body-home">
         Created by
         {{user.username}}
         on
