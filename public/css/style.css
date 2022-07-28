@@ -44,6 +44,7 @@ h2 a {
 
 header {
   margin-top: AUTO;
+
 }
 
 main {
@@ -85,6 +86,7 @@ input {
   background-color: var(--color3);
   box-shadow: 3px 3px var(--color4);
   transform: translate(-1px, -1px);
+  z-index: 1;
 }
 
 .btn:hover {
@@ -116,6 +118,7 @@ input {
   width: 100%;
   position: fixed;
   background-color: var(--color2);
+  z-index: 99;
 }
 
 .nav-item {
