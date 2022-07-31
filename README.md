@@ -68,7 +68,7 @@ Tests for helper functions provided. Test using Jest npm in command line.
 3. Craig Hyman
 4. Colin Alexander
 
-**GitHub Repository:** https://github.com/jorge30fm/Real-Project-2/
+**GitHub Repository:** https://github.com/jorge30fm/Travel-Size-
 
 **App url:** <https://dry-refuge-26643.herokuapp.com/>
 
