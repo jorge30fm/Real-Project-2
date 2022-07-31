@@ -50,7 +50,7 @@ Tests for helper functions provided. Test using Jest npm in command line.
 3. Craig Hyman
 4. Colin Alexander
 
-**GitHub Repository:** <https://github.com/jorge30fm/e-commerce-backend->
+**GitHub Repository:** https://github.com/jorge30fm/Real-Project-2/
 
 **App url:** <https://dry-refuge-26643.herokuapp.com/>
 
