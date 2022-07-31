@@ -49,7 +49,8 @@ header {
 
 main {
   margin: 20px auto;
-  width: 94%;
+  width: 97%;
+
 }
 
 a {
@@ -102,7 +103,7 @@ input {
 }
 
 .upload-btn {
-  width: auto;
+  /* width: auto; */
   background-color: var(--color5);
 }
 
@@ -110,13 +111,15 @@ input {
   text-align: center;
 }
 
+
 .li-inline {
   display: inline;
 }
 
 .navbar {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
+  padding: 2%;
   background-color: var(--color2);
   z-index: 99;
 }
@@ -178,9 +181,17 @@ footer {
   color: var(--color3);
 }
 
+img {
+  border: 3px solid var(--color2);
+  border-radius: var(--border-radius);
+
+}
+
 .image {
   display: flex;
   justify-content: center;
+  min-width: 50vw;
+  max-height: 80vh;
 }
 
 /* CARDS */
@@ -235,12 +246,7 @@ footer {
 }
 
 .min-100-vw {
-  min-width: 100vw;
-}
-
-/* FONT UTILS */
-.text-uppercase {
-  text-transform: uppercase;
+  min-width: 50vw;
 }
 
 /* FLEX CONTENT */

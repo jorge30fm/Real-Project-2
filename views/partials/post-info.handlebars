@@ -2,9 +2,11 @@
   <div class="title card">
     <h2 class="card-header">{{title}}</h2>
     <p class="card-body">{{post_text}}</p>
+    {{#if image}}
     <div class="image">
-      <img src="https://res.cloudinary.com/degnyzbus/image/upload/ar_16:9,c_fit,h_300/{{image}}.jpg" alt="" />
+      <img class="image" src="https://res.cloudinary.com/degnyzbus/image/upload/ar_16:9,c_fit,h_300/{{image}}.jpg" alt="" />
     </div>
+    {{/if}}
     <h3 class="list-group">
       Created by
       {{user.username}}
