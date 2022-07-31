@@ -5,21 +5,38 @@
 ## Table of Contents
 
 1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [License](#license)
-5. [Contributors](#conttributors)
+2. [Images](#images)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [License](#license)
+6. [Contributors](#conttributors)
 
 
 ## Description
+
 Travel Size is an app for travel enthusiasts. When you want to travel but don’t know anyone who has been there, this site allows you to read about other people’s experiences as well as create your own to help others looking for the same information. Just make an account to enjoy the benefits of this we app. Employs bcrypt and password hashing to safeguard user informaiton. Through the use of Cloudinary SaaS user can upload and store images in our database.
 
+## Images
+
+Login page
+
+<img src="./images/screenshot1.jpg" width="600px"><br>
+Homepage 
+
+<img src="./images/screenshot2.jpg" width="600px"><br>
+Dashboard
+
+<img src="./images/screenshot3.jpg" width="600px"><br>
+Edit/Delete Posts
+
+<img src="./images/screenshot4.jpg" width="600px"><br>
 
 ## Installation
 
 No installation necessary for users, open the app url and start enjoying the app. For developers, fork repository from github, download locally and run 'npm install' in terminal to install all necessary dependencies
 
 ## Usage
+
 To use application, open the app's url. If you are a new user, sign up using an email, and create your username and password. If you are a previous user select log in and add your credentials. Once logged in you can view, add and edit posts.
 
 ## License
@@ -45,6 +62,7 @@ To contribute to this application, make sure to fork the repository and clone it
 Tests for helper functions provided. Test using Jest npm in command line.
 
 ## Contributors
+
 1. Chris Hodges
 2. Jorge Monteagudo
 3. Craig Hyman
